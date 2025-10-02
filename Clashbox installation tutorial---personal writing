@@ -1,1 +1,51 @@
+Clashbox安装教程
+1. 解压2.1-windows，安装java环境。
+解压安装包2.1-windows，可以去xiaobai的github下载最新版，链接附在最后的致谢。
+ 
+下载java环境，推荐.msi自动化安装，一直点ok即可。
+https://mirrors.tuna.tsinghua.edu.cn/Adoptium/17/jre/x64/windows/
+ 
+2. 登录账号，并完成无线调试连接，不要用校园网。
+ 
+2. 证书申请与下载。
+开发者网站。
+https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/
+ 
+先下载DevEco Studio参考教程
+https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-software-install
+在申请证书参考教程
+https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237
+https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-releasecert-0000001946273961
+我用的是DevEco 5.0.5所以只能手动签名
+
+ 
+注意分清什么是密钥、请求、数字证书和.p7b。以下为基本步骤，注意密码设定只能是xiaobai123，别名最好是xiaobai，原因是这个软件目前会有修改不了密钥密码的bug。
+ 
+ 
+ 
+ 
+然后先用你的csr，在这里请求
+ 
+显示生效即可，然后可以下载一下.cer，但是没啥用。
+ 
+以上步骤做完以后就很轻松了，接下来回到小白的鸿蒙侧载调试助手。
+ 
+4. 软件侧载。
+这个界面会有之前申请完了的证书，选择新生成的，我这里是clashbox。
+ 
+更改证书会有提示，注意我们之前保存的密钥文件等。
+ 
+点右上角的齿轮设置新的密钥。
+ 
+可以复制文件地址，注意要是完整的，所有都要换，不一一展示。
+ 
+出现下面前面能完成的情况，但是下载不了，点重置，再一次就没问题。
+ 
+安装完成。
+ 
+
+本教程旨在为非开发者用户提供下载指导，目前上传github，侵删。感谢以下github开源项目及为其做出贡献的作者，：
+https://github.com/likuai2010/auto-installer
+https://github.com/xiaobaigroup/ClashBox
+
 
